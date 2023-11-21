@@ -62,7 +62,7 @@ for nama, nomor in daftar_kontak.items():
 print(table)
 ```
 
-![gambar](Screenshot/latihan.png)
+![gambar](Screenshot/ss2.png)
 
 # Praktikum
 ## Program Data Mahasiswa
