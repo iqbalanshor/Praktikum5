@@ -67,7 +67,7 @@ print(table)
 # Praktikum
 ## Program Data Mahasiswa
 
-![](gambar/code.png)
+![gambar](Screenshot/ss1.png)
 
 - Membuat dictionary kosong
 ```python
