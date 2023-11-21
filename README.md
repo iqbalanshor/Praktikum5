@@ -2,49 +2,67 @@
 # Latihan
 ## Membuat Dictionary daftar kontak
 ```python
-kontak = {'Ari': '081267888', 'Dina': '087677776'}
+daftar_kontak = {
+    'Ari': '081234567',
+    'Dina': '082345678',
+    'Eva': '083456789'
+}
 ```
 
 ## Menampilkan Kontak Ari
 ```python
-print("Kontak Ari", kontak['Ari'])
+print("Kontak Ari:", daftar_kontak.get('Ari', 'Kontak tidak ditemukan'))
 ```
 
 ## Menambahkan kontak Riko
 ```python
-kontak['Riko'] = '087654544'
+daftar_kontak['Riko'] = '087654544'
 ```
 
 ## Mengubah kontak Dina
 ```python
-kontak['Dina'] = '088999776'
+daftar_kontak['Dina'] = '088999776'
 ```
 
 ## Tampilkan semua nama
-```python print("=====Menampilkan semua nama=====")
-for nama in kontak.keys():
+```python
+print("Semua Nama:")
+for nama in daftar_kontak.keys():
     print(nama)
 ```
 
 ## Tampilkan semua nomor
-```python print("\n=====Menampilkan semua nomor=====")
-for nomor in kontak.values():
+```python
+print("\nSemua Nomor:")
+for nomor in daftar_kontak.values():
     print(nomor)
 ```
 
 ## Tampilkan daftar Nama dan nomornya
-```python print("\n=====Menampilkan nama dan nomor=====")
-for nama, nomor in kontak.items():
-    print(f"{nama}: {nomor}")
+```python
+print("\nDaftar Nama dan Nomor:")
+table = PrettyTable(['Nama', 'Nomor'])
+for nama, nomor in daftar_kontak.items():
+    table.add_row([nama, nomor])
+print(table)
 ```
 
 ## Menghapus kontak Dina
 ```python 
-del kontak['Dina']
+if 'Dina' in daftar_kontak:
+    del daftar_kontak['Dina']
 ```
 
+## Tampilkan hasil setelah menghapus Dina
+```python 
+print("\nSetelah menghapus Dina:")
+table = PrettyTable(['Nama', 'Nomor'])
+for nama, nomor in daftar_kontak.items():
+    table.add_row([nama, nomor])
+print(table)
+```
 
-![](gambar/latihan.png)
+![gambar](Screenshot/latihan.png)
 
 # Praktikum
 ## Program Data Mahasiswa
@@ -159,13 +177,13 @@ Apabila menginput 'k' maka program langsung berhenti
 ## Tampilan Program
 - Menambahkan Data
 
-![gambar](screenshot/TambahData.png)
+![gambar](Screenshot/TambahData.png)
 
 - Mengubah Data
 
-![](gambar/ubah.png)
+![gambar](Screenshot/UbahData.png)
 
 - Menghapus Data
 
-![](gambar/hapus.png)
+![gambar](Screenshot/HapusData.png)
 
