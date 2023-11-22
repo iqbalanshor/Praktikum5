@@ -186,4 +186,5 @@ Apabila menginput 'k' maka program langsung berhenti
 - Menghapus Data
 
 ![gambar](Screenshot/HapusData.png)
-
+# Flowchart
+![gambar](Screenshot/Flowchart.png)
